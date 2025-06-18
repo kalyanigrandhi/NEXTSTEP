@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextStep - Discover Your Future</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="NextStep Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="career-quiz.html">Career Quiz</a></li>
+            <li><a href="scholarships.html">Scholarships</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="success.html">Success Stories</a></li>
+        </ul>
+        <a href="#" class="cta-btn">Get Started</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Your Path to Success <span>Begins Here.</span></h1>
+            <p>Explore careers, find scholarships, and get inspired.</p>
+            <a href="career-quiz.html" class="btn">Take the Quiz</a>
+        </div>
+    </header>
+   <!-- Chatbot Button -->
+<div class="chatbot-container">
+    <div class="chat-popup">Need Help? Try our chatbot!</div>
+    <button class="chatbot-btn" onclick="toggleChatbot()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#c19177" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10a3 3 0 0 1-3 3H7l-4 4V4a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            <line x1="8" y1="9" x2="8" y2="9"/>
+            <line x1="12" y1="9" x2="12" y2="9"/>
+            <line x1="16" y1="9" x2="16" y2="9"/>
+        </svg>
+    </button>
+</div>
+
+<!-- Chatbot Iframe -->
+<div class="chatbot-iframe-container" id="chatbotFrame">
+    <iframe src="https://my-chatbot1.streamlit.app/?embed=true" width="350" height="400"></iframe>
+</div>
+
+
+</body>
+</html>

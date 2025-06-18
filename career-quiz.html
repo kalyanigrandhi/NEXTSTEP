@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Quiz | Career Guidance</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+  <!-- 🔥 Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+        <a href="index.html">
+            <img src="logo.png" alt="NextStep Logo">
+        </a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="career-quiz.html" class="active">Career Quiz</a></li>
+        <li><a href="scholarships.html">Scholarships</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="success.html">Success Stories</a></li>
+    </ul>
+    <a href="#" class="cta-btn">Get Started</a>
+  </nav>
+
+  <!-- 🔥 Quiz Section -->
+  <section class="quiz-container">
+      <h1>Find Your Ideal Career</h1>
+      <p>Answer the following questions to discover the best career path for you.</p>
+      
+      <!-- 🔥 Progress Bar -->
+      <div class="progress-bar">
+          <div class="progress"></div>
+      </div>
+
+      <!-- 🔥 Quiz Questions -->
+      <div id="quiz"></div>
+
+      <button id="next-btn">Next</button>
+      <button id="submit-btn" style="display: none;">Submit</button>
+  </section>
+
+  <!-- 🔥 Quiz Result Section -->
+  <section id="result-section" class="hidden">
+      <h2>Your Recommended Career Path:</h2>
+      <p id="career-result"></p>
+      <a href="resources.html" class="cta-btn">Explore Resources</a>
+  </section>
+
+  <script src="career-quiz.js"></script>
+</body>
+</html>

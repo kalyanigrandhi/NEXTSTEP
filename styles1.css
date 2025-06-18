@@ -1,0 +1,173 @@
+/* 🔥 General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0d0d0d;
+    color: #fff;
+    padding-top: 90px; /* Prevents navbar from overlapping content */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: transparent; /* Change from black to transparent */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* 🔥 Logo Styling */
+.logo img {
+    height: 70px; 
+    width: auto;  
+}
+
+/* 🔥 Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+    color: #c19177;
+}
+
+/* CTA Button */
+.cta-btn {
+    background: #c19177;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background: #a6785b;
+}
+
+
+
+/* 🔥 Hero Section */
+.hero {
+    height: 60vh;
+    background: url('image.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* 🔥 Resource Section */
+.resource-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 20px;
+    flex-wrap: wrap;
+}
+
+/* 🔥 Resource Cards */
+.resource-card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+    border: 1px solid #333;
+}
+
+.resource-card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.resource-card h3 {
+    margin-top: 15px;
+    color: #c19177;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.resource-card p {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* 🔥 Hover Effects */
+.resource-card:hover {
+    transform: translateY(-5px);
+    background: #222;
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* 🔥 Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .resource-card {
+        width: 90%;
+    }
+}
